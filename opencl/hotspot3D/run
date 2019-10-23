@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z "$DATA_DIR" ]
+then
+    export DATA_DIR=/home/hyu/gpu-rodinia/data
+fi
+
+./hotspot3D.out -n 512 -l 8 -i 500 \
+    -f ${DATA_DIR}/hotspot3D/power_512x8 ${DATA_DIR}/hotspot3D/temp_512x8 output.txt \
+    $@

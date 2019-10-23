@@ -1,0 +1,11 @@
+# 20 in total
+
+bm="backprop bfs            b+tree     cfd       dwt2d         \
+    gaussian heartwall      hotspot    hotspot3D hybridsort    \
+    kmeans   lavaMD         lud        myocyte   nn            \
+    nw       particlefilter pathfinder srad      streamcluster"
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+OUTDIR=$DIR/results
+
+export DATA_DIR=/home/hyu/gpu-rodinia/data

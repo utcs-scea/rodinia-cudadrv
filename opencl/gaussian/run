@@ -1,0 +1,4 @@
+#!/bin/bash
+
+command time -f"%e" ./gaussian.out -s 2048 $@
+# command time -f"%e" bash -c "echo ./gaussian.out -s 2048 $@; sleep 2"

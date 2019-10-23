@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./OCL_particlefilter_double.out -x 128 -y 128 -z 10 -np 400000 $@

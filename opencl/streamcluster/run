@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+#./streamcluster.out 10 20 16 2048000 204800 1000 none output.txt 1
+./streamcluster.out 10 20 256 65536 65536 1000 none output.txt 1 $@

@@ -1,0 +1,10 @@
+# 20 in total
+
+bm="backprop bfs    gaussian heartwall  hotspot  \
+    lud      needle nn       pathfinder srad_v1  \
+    srad_v2"
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+OUTDIR=$DIR/results
+
+export DATA_DIR=/home/hyu/gpu-rodinia/data

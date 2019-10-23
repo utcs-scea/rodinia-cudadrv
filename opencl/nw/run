@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./nw.out 1024 10 ./nw.cl $@

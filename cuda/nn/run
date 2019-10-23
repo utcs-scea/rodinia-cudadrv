@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z "$DATA_DIR" ]
+then
+    export DATA_DIR=/home/hyu/gpu-rodinia/data
+fi
+
+./nn filelist_4 -r 5 -lat 30 -lng 90 -f ${DATA_DIR}

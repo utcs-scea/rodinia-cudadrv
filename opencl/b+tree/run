@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z "$DATA_DIR" ]
+then
+    export DATA_DIR=/home/hyu/gpu-rodinia/data
+fi
+
+./b+tree.out file ${DATA_DIR}/b+tree/mil.txt command ${DATA_DIR}/b+tree/command.txt $@

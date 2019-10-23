@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ -z "$DATA_DIR" ]
+then
+    export DATA_DIR=/home/hyu/gpu-rodinia/data
+fi
+./heartwall.out -n 104 -f ${DATA_DIR}/heartwall/test.avi -i ${DATA_DIR}/heartwall/input.txt $@ 

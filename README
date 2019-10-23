@@ -1,0 +1,26 @@
+This benchmark is based on [Gdev benchmark suite][1], which was developed by
+Shinpei Kato from Rodinia 2.0.1.
+The original Rodinia benchmark is modified to use the CUDA Driver API instead
+of the CUDA Runtime API.
+
+The original Rodinia project can be found at:
+
+https://www.cs.virginia.edu/~skadron/wiki/rodinia/index.php
+
+Please download the dataset from the original package:
+
+http://lava.cs.virginia.edu/Rodinia/download_links.htm
+
+The Rodinia benchmark written with CUDA runtime API can be found at:
+
+https://github.com/yuhc/gpu-rodinia
+
+We add a simple testing program for both CUDA driver and OpenCL API benchmarks.
+`tester.sh` executes all benchmarks listed in `benchmarks`, and `parser.sh`
+is used to parse the measured results.
+
+Same as Gdev benchmark, we redistribute this modified Rodinia benchmark under
+the original [Rodinia license][2].
+
+[1]: https://github.com/shinpei0208/gdev-bench/tree/master/rodinia/cuda
+[2]: http://www.cs.virginia.edu/~sc5nf/license.htm

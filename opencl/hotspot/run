@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z "$DATA_DIR" ]
+then
+    export DATA_DIR=/home/hyu/gpu-rodinia/data
+fi
+
+./hotspot.out 1024 4 10000 ${DATA_DIR}/hotspot/temp_1024 ${DATA_DIR}/hotspot/power_1024 output.txt $@
